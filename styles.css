@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+.topRow,
+.bottomRow {
+  display: flex;
+  gap: 5%;
+  text-align: center;
+  justify-content: center;
+}
+.comicContainer {
+  padding: 5%;
+}
+
+.comicCard {
+  margin-bottom: 5%;
+}
+
+.comicImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 11px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .topRow,
+  .bottomRow {
+    flex-wrap: wrap;
+    gap: 0%;
+    padding: 0%;
+  }
+}
