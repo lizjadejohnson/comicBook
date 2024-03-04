@@ -20,7 +20,24 @@ h1 {
 .comicImg img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px 10px 11px 10px;
+  border: 5px solid black; /* Thick black border */
+  box-shadow: 5px 3px 0px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensures the content fits neatly inside the border */
+}
+
+#panel1 .comicImg img,
+#panel4 .comicImg img {
+  border-radius: 100% 38% 37% 38% / 47% 35% 30% 100%;
+}
+
+#panel2 .comicImg img,
+#panel5 .comicImg img {
+  border-radius: 44% 87% 74% 54% / 88% 71% 71% 100%;
+}
+
+#panel3 .comicImg img,
+#panel6 .comicImg img {
+  border-radius: 24% 75% 38% 47% / 73% 24% 5% 62%;
 }
 
 @media only screen and (max-width: 600px) {
